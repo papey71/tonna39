@@ -1,0 +1,350 @@
+header {
+    background: url("../img/bacgraund.png") no-repeat center top / cover;
+    width: 100%;
+    height: 696 / 1920 * 100vw;
+    .container {
+        .header {
+            margin: 0 auto;
+            margin-bottom: 0;
+            padding-top: 39 / 1920 * 100vw;
+            width: 1180 / 1920 * 100%;
+            height: 90 / 1920 * 100vw;
+            display: flex;
+            img {
+                margin-top: 2 / 1920 * 100vw;
+                width: 218 / 1920 * 100vw;
+                height: 33 / 1920 * 100vw;
+                margin-right: 78 / 1920 * 100vw;
+            }
+            .header-a {
+                margin-top: 7 / 1920 * 100vw;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24 / 1920 * 100vw;
+                color: #ffffff;
+                margin-right: 28 / 1180 * 100%;
+                transition: 0.2s;
+                &:hover {
+                    color: #ff7a00;
+                }
+            }
+            div {
+                width: 217 / 1180 * 100%;
+                margin-left: -10 / 1180 * 100%;
+                .header-button {
+                    margin: 0 auto;
+                    display: block;
+                    padding: 10 / 1920 * 100vw 23 / 1920 * 100vw;
+                    background-color: #ff7a00;
+                    border-radius: 17 / 1920 * 100vw;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20 / 1920 * 100vw;
+                    color: #ffffff;
+                }
+                .social-net {
+                    display: flex;
+                    margin: 0 auto;
+                    width: 153 / 1920 * 100vw;
+                    .net-img {
+                        margin-top: 8 / 1920 * 100vw;
+                        img {
+                            margin: 4 / 1920 * 100vw;
+                            width: 30 / 1920 * 100vw;
+                            height: 30 / 1920 * 100vw;
+                        }
+                    }
+                }
+            }
+        }
+        .header-mobile {
+            display: none;
+        }
+        .main {
+            margin: 0 auto;
+            margin-top: 55 / 1920 * 100vw;
+            width: 1180 / 1920 * 100vw;
+            h1 {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 900;
+                font-size: 55 / 1920 * 100vw;
+                color: #ff7a00;
+            }
+            h2 {
+                margin-top: 15 / 1920 * 100vw;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 35 / 1920 * 100vw;
+                color: #ffffff;
+            }
+            .p1 {
+                margin-top: 12 / 1920 * 100vw;
+                width: 548 / 1920 * 100vw;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20 / 1920 * 100vw;
+                color: #ffffff;
+            }
+            a {
+                display: block;
+                width: 215 / 1920 * 100vw;
+                padding: 16 / 1920 * 100vw 38 / 1920 * 100vw;
+                border: 1 / 1920 * 100vw solid #ffffff;
+                border-radius: 31 / 1920 * 100vw;
+                margin-top: 42 / 1920 * 100vw;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25 / 1920 * 100vw;
+                color: #ffffff;
+                transition: 0.3s;
+                &:hover {
+                    background-color: #ff7a00;
+                    color: #ffffff;
+                    border: 1 / 1920 * 100vw solid #ff7a00;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+            .p2 {
+                margin: 8 / 1920 * 100vw 0px 0px 25 / 1920 * 100vw;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 200;
+                font-size: 12 / 1920 * 100vw;
+                color: #ffffff;
+            }
+        }
+        .bars {
+            display: flex;
+            margin: 0 auto;
+            margin-top: 40 / 1920 * 100vw;
+            width: 1180 / 1920 * 100vw;
+            div {
+                display: flex;
+                margin-right: 15 / 1920 * 100vw;
+                border-radius: 20 / 1920 * 100vw;
+                height: 73 / 1920 * 100vw;
+                background-color: rgba(255, 255, 255, 0.8);
+                img {
+                    margin: 12 / 1920 * 100vw;
+                    margin-right: 17 / 1920 * 100vw;
+                    width: 49 / 1920 * 100vw;
+                    height: 49 / 1920 * 100vw;
+                }
+                p {
+                    margin-top: 16 / 1920 * 100vw;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 17 / 1920 * 100vw;
+                    color: #242d39;
+                }
+            }
+            .watch {
+                width: 353 / 1920 * 100vw;
+            }
+            .truck {
+                width: 251 / 1920 * 100vw;
+            }
+            .scales {
+                width: 244 / 1920 * 100vw;
+            }
+        }
+    }
+}
+.popup__menu {
+    display: none;
+}
+
+@media (max-width: 575px) {
+    header {
+        background: url("../img/header-bg-mobile.png") no-repeat center top / cover;
+        width: 100%;
+        height: auto;
+        padding-bottom: 7 / 375 * 100vw;
+        .container {
+            margin: 0 auto;
+            padding-top: 17 / 375 * 100vw;
+            width: 339 / 375 * 100vw;
+            .header {
+                display: none;
+            }
+            .header-mobile {
+                display: flex;
+                div {
+                    margin-right: 75 / 375 * 100vw;
+                    width: 146 / 375 * 100vw;
+                    img {
+                        margin: 0 auto;
+                        width: 146 / 375 * 100vw;
+                        height: 22 / 375 * 100vw;
+                    }
+                    .social-net {
+                        margin: 0 auto;
+                        margin-top: 12 / 375 * 100vw;
+                        width: 129 / 375 * 100vw;
+                        a {
+                            margin: 0px;
+                            img {
+                                margin-right: 4 / 375 * 100vw;
+                                width: 25 / 375 * 100vw;
+                                height: 25 / 375 * 100vw;
+                            }
+                            .margin-none {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+                .email-mobile {
+                    margin-right: 6 / 375 * 100vw;
+                    img {
+                        width: 26 / 375 * 100vw;
+                        height: 26 / 375 * 100vw;
+                    }
+                }
+                .phone-mobile {
+                    margin-right: 20 / 375 * 100vw;
+                    img {
+                        width: 26 / 375 * 100vw;
+                        height: 26 / 375 * 100vw;
+                    }
+                }
+                .menu-burger {
+                    margin-top: 3 / 375 * 100vw;
+                    width: 40 / 375 * 100vw;
+                    height: 20 / 375 * 100vw;
+                }
+            }
+            .main {
+                margin: 0 auto;
+                margin-top: 50 / 375 * 100vw;
+                width: 100%;
+                h1 {
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 25 / 375 * 100vw;
+                    color: #ff7a00;
+                }
+                h2 {
+                    margin-top: 10 / 375 * 100vw;
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18 / 375 * 100vw;
+                    color: #ffffff;
+                }
+                .p1 {
+                    margin-top: 5 / 375 * 100vw;
+                    width: 259 / 375 * 100vw;
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12 / 375 * 100vw;
+                    color: #ffffff;
+                }
+                a {
+                    display: block;
+                    width: 135 / 375 * 100vw;
+                    padding: 10 / 375 * 100vw 18 / 375 * 100vw;
+                    border: 1 / 375 * 100vw solid #ffffff;
+                    border-radius: 19 / 375 * 100vw;
+                    margin-top: 23 / 375 * 100vw;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 15 / 375 * 100vw;
+                    color: #ffffff;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: #ff7a00;
+                        color: #242d39;
+                        border: 1 / 375 * 100vw solid #ff7a00;
+                        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+                    }
+                }
+                .p2 {
+                    margin: 6 / 375 * 100vw 0px 0px 8 / 375 * 100vw;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 8 / 375 * 100vw;
+                    color: #ffffff;
+                }
+            }
+            .bars {
+                display: none;
+            }
+        }
+    }
+    .popup__menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+        z-index: 1000;
+        .container {
+            .popup__area {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+            }
+            .popup__body {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 496 / 375 * 100vw;
+                background-color: #b78455;
+                box-shadow: 0px 4 / 375 * 100vw 4 / 375 * 100vw rgba(0, 0, 0, 0.25);
+                .menu__cross {
+                    margin: 0;
+                    img {
+                        margin: 18 / 375 * 100vw 0px 0px 314 / 375 * 100vw;
+                        width: 31.11 / 375 * 100vw;
+                        height: 29.7 / 375 * 100vw;
+                    }
+                }
+                a {
+                    margin: 28 / 375 * 100vw 0px 0px 40 / 375 * 100vw;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16 / 375 * 100vw;
+                    color: #ffffff;
+                }
+                .phone1 {
+                    margin: 30 / 375 * 100vw 0px 9 / 375 * 100vw 40 / 375 * 100vw;
+                }
+                .phone2 {
+                    margin: 0px 0px 20 / 375 * 100vw 40 / 375 * 100vw;
+                }
+                .socialnet {
+                    a {
+                        margin-right: -35 / 375 * 100vw;
+                        img {
+                            width: 30 / 375 * 100vw;
+                            height: 30 / 375 * 100vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

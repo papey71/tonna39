@@ -1,0 +1,2847 @@
+@import "_nullstyle";
+@import "_header";
+@import "_footer";
+
+.materials {
+    .container {
+        padding-top: 50 / 1920 * 100vw;
+        margin: 0 auto;
+        width: 1180 / 1920 * 100vw;
+        h1 {
+            margin-bottom: 5 / 1920 * 100vw;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40 / 1920 * 100vw;
+            color: #242d39;
+        }
+        .mat-str {
+            display: flex;
+            margin-top: 30 / 1920 * 100vw;
+            .mat-str__mobile {
+                display: flex;
+                a {
+                    margin: 0;
+                    .material {
+                        margin-right: 20 / 1920 * 100vw;
+                        width: 280 / 1920 * 100vw;
+                        height: 319 / 1920 * 100vw;
+                        background-color: #f6f6f6;
+                        border-radius: 15 / 1920 * 100vw;
+                        transition: 0.3s;
+                        img {
+                            width: 100%;
+                            height: 210 / 1920 * 100vw;
+                            border-radius: 15 / 1920 * 100vw 15 / 1920 * 100vw 0px 0px;
+                        }
+                        h1 {
+                            margin-top: 8 / 1920 * 100vw;
+                            text-align: center;
+                            font-family: "Inter";
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 20 / 1920 * 100vw;
+                            text-transform: uppercase;
+                            color: #242d39;
+                        }
+                        p {
+                            margin: 10 / 1920 * 100vw 0px 0px 5 / 1920 * 100vw;
+                            text-align: center;
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18 / 1920 * 100vw;
+                            color: #6c6c6c;
+                        }
+                        .p1 {
+                            margin-top: 13 / 1920 * 100vw;
+                            text-align: center;
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15 / 1920 * 100vw;
+                            text-transform: capitalize;
+                            color: #7b7b7b;
+                        }
+                        &:hover {
+                            margin-top: -4 / 1920 * 100vw;
+                            box-shadow: 0px 5 / 1920 * 100vw 5 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                        }
+                    }
+                    .margin__none {
+                        margin: 0;
+                    }
+                }
+            }
+            .calculator {
+                width: 580 / 1920 * 100vw;
+                height: 319 / 1920 * 100vw;
+                border-radius: 15 / 1920 * 100vw;
+                background: url("../img/calculator-bg.png") no-repeat center top / cover;
+                img {
+                    width: 44 / 1920 * 100vw;
+                    height: 44 / 1920 * 100vw;
+                    margin: 15 / 1920 * 100vw 0px 0px 15 / 1920 * 100vw;
+                }
+                h1 {
+                    margin-top: -5 / 1920 * 100vw;
+                    text-align: center;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20 / 1920 * 100vw;
+                    color: #ff7a00;
+                }
+                p {
+                    margin-top: 10 / 1920 * 100vw;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22 / 1920 * 100vw;
+                    text-align: center;
+                    color: #242d39;
+                }
+                a {
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 54 / 1920 * 100vw;
+                    padding: 20 / 1920 * 100vw 30 / 1920 * 100vw;
+                    border: 1 / 1920 * 100vw solid #ff7a00;
+                    border-radius: 30 / 1920 * 100vw;
+                    width: 107 / 1920 * 100vw;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16 / 1920 * 100vw;
+                    text-transform: uppercase;
+                    color: #242d39;
+                    transition: 0.3s;
+                    &:hover {
+                        color: #fff;
+                        background-color: #ff7a00;
+                    }
+                }
+            }
+        }
+    }
+}
+.popups {
+    .container {
+        .popup__sand {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            &:target {
+                opacity: 1;
+                visibility: visible;
+            }
+            .popup__area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -10;
+            }
+            .popup__body {
+                margin: 0 auto;
+                margin-top: 100 / 1920 * 100vw;
+                width: 1144 / 1920 * 100vw;
+                height: 766 / 1920 * 100vw;
+                background-color: #ffffff;
+                box-shadow: 0px 4 / 1920 * 100vw 20 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                border-radius: 30 / 1920 * 100vw;
+                .popup__title {
+                    margin: 0 auto;
+                    display: flex;
+                    padding-top: 15 / 1920 * 100vw;
+                    width: 1082 / 1920 * 100vw;
+                    margin-bottom: 20 / 1920 * 100vw;
+                    h1 {
+                        margin-left: 482 / 1920 * 100vw;
+                        text-align: center;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 35 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    a {
+                        img {
+                            margin: 7 / 1920 * 100vw 0px 0px 447 / 1920 * 100vw;
+                            width: 35 / 1920 * 100vw;
+                            height: 35 / 1920 * 100vw;
+                            border-radius: 17.5 / 1920 * 100vw;
+                            transition: 0.3s;
+                            &:hover {
+                                box-shadow: 0px 0px 7 / 1920 * 100vw rgba(0, 0, 0, 0.25);
+                            }
+                        }
+                    }
+                }
+                .popup__sand-str {
+                    display: flex;
+                    margin: 0 auto;
+                    margin-bottom: 30 / 1920 * 100vw;
+                    width: 1060 / 1920 * 100vw;
+                    .popup__sand-str-mobile {
+                        display: flex;
+                        .popup-material {
+                            margin-right: 20 / 1920 * 100vw;
+                            width: 250 / 1920 * 100vw;
+                            height: 300 / 1920 * 100vw;
+                            background: #ffffff;
+                            box-shadow: 0px 0px 10 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                            border-radius: 15 / 1920 * 100vw;
+                            img {
+                                margin-left: 45 / 1920 * 100vw;
+                                width: 160 / 1920 * 100vw;
+                                height: 124 / 1920 * 100vw;
+                                margin-top: 10 / 1920 * 100vw;
+                            }
+                            h1 {
+                                width: 218 / 1920 * 100vw;
+                                margin: 0px 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 22 / 1920 * 100vw;
+                                color: #242d39;
+                            }
+                            p {
+                                width: 227 / 1920 * 100vw;
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 15 / 1920 * 100vw;
+                                color: #242d39;
+                                span {
+                                    font-weight: 300;
+                                }
+                            }
+                            h2 {
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20 / 1920 * 100vw;
+                                color: #ff7a00;
+                            }
+                        }
+                        .margin__none {
+                            margin: 0;
+                        }
+                    }
+                }
+                .foot {
+                    display: flex;
+                    h3 {
+                        margin: -10 / 1920 * 100vw 331 / 1920 * 100vw 0 / 1920 * 100vw 46 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    .tel-1 {
+                        margin: -10 / 1920 * 100vw 10 / 1920 * 100vw 0px 0px;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    .tel-2 {
+                        margin: -10 / 1920 * 100vw 0px 0px 0px;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                }
+            }
+        }
+
+        .popup__crush-stone {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            &:target {
+                opacity: 1;
+                visibility: visible;
+            }
+            .popup__area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -10;
+            }
+            .popup__body {
+                margin: 0 auto;
+                margin-top: 100 / 1920 * 100vw;
+                width: 874 / 1920 * 100vw;
+                height: 435 / 1920 * 100vw;
+                background-color: #ffffff;
+                box-shadow: 0px 4 / 1920 * 100vw 20 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                border-radius: 30 / 1920 * 100vw;
+                .popup__title {
+                    margin: 0 auto;
+                    display: flex;
+                    padding-top: 15 / 1920 * 100vw;
+                    width: 874 / 1920 * 100vw;
+                    margin-bottom: 20 / 1920 * 100vw;
+                    h1 {
+                        margin-left: 360 / 1920 * 100vw;
+                        text-align: center;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 35 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    a {
+                        img {
+                            margin: 7 / 1920 * 100vw 0px 0px 294 / 1920 * 100vw;
+                            width: 35 / 1920 * 100vw;
+                            height: 35 / 1920 * 100vw;
+                            border-radius: 17.5 / 1920 * 100vw;
+                            transition: 0.3s;
+                            &:hover {
+                                box-shadow: 0px 0px 7 / 1920 * 100vw rgba(0, 0, 0, 0.25);
+                            }
+                        }
+                    }
+                }
+                .popup-str {
+                    display: flex;
+                    margin: 0 auto;
+                    margin-bottom: 0px;
+                    width: 790 / 1920 * 100vw;
+                    .popup-str-mobile {
+                        display: flex;
+                        .popup-material {
+                            margin-right: 20 / 1920 * 100vw;
+                            width: 250 / 1920 * 100vw;
+                            height: 300 / 1920 * 100vw;
+                            background: #ffffff;
+                            box-shadow: 0px 0px 10 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                            border-radius: 15 / 1920 * 100vw;
+                            img {
+                                margin-left: 45 / 1920 * 100vw;
+                                width: 160 / 1920 * 100vw;
+                                height: 124 / 1920 * 100vw;
+                                margin-top: 10 / 1920 * 100vw;
+                            }
+                            h1 {
+                                width: 218 / 1920 * 100vw;
+                                margin: 0px 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 22 / 1920 * 100vw;
+                                color: #242d39;
+                            }
+                            p {
+                                width: 227 / 1920 * 100vw;
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 15 / 1920 * 100vw;
+                                color: #242d39;
+                                span {
+                                    font-weight: 300;
+                                }
+                            }
+                            h2 {
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20 / 1920 * 100vw;
+                                color: #ff7a00;
+                            }
+                        }
+                        .popup-logo {
+                            display: none;
+                        }
+                        .margin__none {
+                            margin: 0;
+                        }
+                    }
+                }
+                .foot {
+                    display: flex;
+                    h3 {
+                        margin: 20 / 1920 * 100vw 52 / 1920 * 100vw 0 / 1920 * 100vw 46 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    .tel-1 {
+                        margin: 22 / 1920 * 100vw 10 / 1920 * 100vw 0px 0px;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    .tel-2 {
+                        margin: 22 / 1920 * 100vw 0px 0px 0px;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                }
+            }
+        }
+        .popup__gravel {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            &:target {
+                opacity: 1;
+                visibility: visible;
+            }
+            .popup__area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -10;
+            }
+            .popup__body {
+                margin: 0 auto;
+                margin-top: 100 / 1920 * 100vw;
+                width: 1144 / 1920 * 100vw;
+                height: 435 / 1920 * 100vw;
+                background-color: #ffffff;
+                box-shadow: 0px 4 / 1920 * 100vw 20 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                border-radius: 30 / 1920 * 100vw;
+                .popup__title {
+                    margin: 0 auto;
+                    display: flex;
+                    padding-top: 15 / 1920 * 100vw;
+                    width: 1144 / 1920 * 100vw;
+                    margin-bottom: 20 / 1920 * 100vw;
+                    h1 {
+                        margin-left: 504 / 1920 * 100vw;
+                        text-align: center;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 35 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    a {
+                        img {
+                            margin: 7 / 1920 * 100vw 0px 0px 438 / 1920 * 100vw;
+                            width: 35 / 1920 * 100vw;
+                            height: 35 / 1920 * 100vw;
+                            border-radius: 17.5 / 1920 * 100vw;
+                            transition: 0.3s;
+                            &:hover {
+                                box-shadow: 0px 0px 7 / 1920 * 100vw rgba(0, 0, 0, 0.25);
+                            }
+                        }
+                    }
+                }
+                .popup-str {
+                    display: flex;
+                    margin: 0 auto;
+                    margin-bottom: 0px;
+                    width: 1060 / 1920 * 100vw;
+                    .popup-str-mobile {
+                        display: flex;
+                        .popup-material {
+                            margin-right: 20 / 1920 * 100vw;
+                            width: 250 / 1920 * 100vw;
+                            height: 300 / 1920 * 100vw;
+                            background: #ffffff;
+                            box-shadow: 0px 0px 10 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                            border-radius: 15 / 1920 * 100vw;
+                            img {
+                                margin-left: 45 / 1920 * 100vw;
+                                width: 160 / 1920 * 100vw;
+                                height: 124 / 1920 * 100vw;
+                                margin-top: 10 / 1920 * 100vw;
+                            }
+                            h1 {
+                                width: 218 / 1920 * 100vw;
+                                margin: 0px 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 22 / 1920 * 100vw;
+                                color: #242d39;
+                            }
+                            p {
+                                width: 227 / 1920 * 100vw;
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 15 / 1920 * 100vw;
+                                color: #242d39;
+                                span {
+                                    font-weight: 300;
+                                }
+                            }
+                            h2 {
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20 / 1920 * 100vw;
+                                color: #ff7a00;
+                            }
+                        }
+                        .popup-logo {
+                            display: none;
+                        }
+                        .margin__none {
+                            margin: 0;
+                        }
+                    }
+                }
+                .foot {
+                    display: flex;
+                    h3 {
+                        margin: 20 / 1920 * 100vw 331 / 1920 * 100vw 0 / 1920 * 100vw 46 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    .tel-1 {
+                        margin: 22 / 1920 * 100vw 10 / 1920 * 100vw 0px 0px;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    .tel-2 {
+                        margin: 22 / 1920 * 100vw 0px 0px 0px;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                }
+            }
+        }
+        .popup__ground {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            &:target {
+                opacity: 1;
+                visibility: visible;
+            }
+            .popup__area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -10;
+            }
+            .popup__body {
+                margin: 0 auto;
+                margin-top: 100 / 1920 * 100vw;
+                width: 874 / 1920 * 100vw;
+                height: 435 / 1920 * 100vw;
+                background-color: #ffffff;
+                box-shadow: 0px 4 / 1920 * 100vw 20 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                border-radius: 30 / 1920 * 100vw;
+                .popup__title {
+                    margin: 0 auto;
+                    display: flex;
+                    padding-top: 15 / 1920 * 100vw;
+                    width: 874 / 1920 * 100vw;
+                    margin-bottom: 20 / 1920 * 100vw;
+                    h1 {
+                        margin-left: 383 / 1920 * 100vw;
+                        text-align: center;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 35 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    a {
+                        img {
+                            margin: 7 / 1920 * 100vw 0px 0px 317 / 1920 * 100vw;
+                            width: 35 / 1920 * 100vw;
+                            height: 35 / 1920 * 100vw;
+                            border-radius: 17.5 / 1920 * 100vw;
+                            transition: 0.3s;
+                            &:hover {
+                                box-shadow: 0px 0px 7 / 1920 * 100vw rgba(0, 0, 0, 0.25);
+                            }
+                        }
+                    }
+                }
+                .popup-str {
+                    display: flex;
+                    margin: 0 auto;
+                    margin-bottom: 0px;
+                    width: 790 / 1920 * 100vw;
+                    .popup-str-mobile {
+                        display: flex;
+                        .popup-material {
+                            margin-right: 20 / 1920 * 100vw;
+                            width: 250 / 1920 * 100vw;
+                            height: 300 / 1920 * 100vw;
+                            background: #ffffff;
+                            box-shadow: 0px 0px 10 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                            border-radius: 15 / 1920 * 100vw;
+                            img {
+                                margin-left: 45 / 1920 * 100vw;
+                                width: 160 / 1920 * 100vw;
+                                height: 124 / 1920 * 100vw;
+                                margin-top: 10 / 1920 * 100vw;
+                            }
+                            h1 {
+                                width: 218 / 1920 * 100vw;
+                                margin: 0px 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 22 / 1920 * 100vw;
+                                color: #242d39;
+                            }
+                            p {
+                                width: 227 / 1920 * 100vw;
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 15 / 1920 * 100vw;
+                                color: #242d39;
+                                span {
+                                    font-weight: 300;
+                                }
+                            }
+                            .p-smoll {
+                                span {
+                                    font-size: 14 / 1920 * 100vw;
+                                }
+                            }
+                            h2 {
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20 / 1920 * 100vw;
+                                color: #ff7a00;
+                            }
+                        }
+                        .popup-logo {
+                            display: none;
+                        }
+                        .margin__none {
+                            margin: 0;
+                        }
+                    }
+                }
+                .foot {
+                    display: flex;
+                    h3 {
+                        margin: 20 / 1920 * 100vw 52 / 1920 * 100vw 0 / 1920 * 100vw 46 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    .tel-1 {
+                        margin: 22 / 1920 * 100vw 10 / 1920 * 100vw 0px 0px;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    .tel-2 {
+                        margin: 22 / 1920 * 100vw 0px 0px 0px;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                }
+            }
+        }
+        .popup__brick {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            &:target {
+                opacity: 1;
+                visibility: visible;
+            }
+            .popup__area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -10;
+            }
+            .popup__body {
+                margin: 0 auto;
+                margin-top: 100 / 1920 * 100vw;
+                width: 604 / 1920 * 100vw;
+                height: 416 / 1920 * 100vw;
+                background-color: #ffffff;
+                box-shadow: 0px 4 / 1920 * 100vw 20 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                border-radius: 30 / 1920 * 100vw;
+                .popup__title {
+                    margin: 0 auto;
+                    display: flex;
+                    padding-top: 15 / 1920 * 100vw;
+                    width: 604 / 1920 * 100vw;
+                    margin-bottom: 20 / 1920 * 100vw;
+                    h1 {
+                        margin-left: 149 / 1920 * 100vw;
+                        text-align: center;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 35 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    a {
+                        img {
+                            margin: 7 / 1920 * 100vw 0px 0px 83 / 1920 * 100vw;
+                            width: 35 / 1920 * 100vw;
+                            height: 35 / 1920 * 100vw;
+                            border-radius: 17.5 / 1920 * 100vw;
+                            transition: 0.3s;
+                            &:hover {
+                                box-shadow: 0px 0px 7 / 1920 * 100vw rgba(0, 0, 0, 0.25);
+                            }
+                        }
+                    }
+                }
+                .popup-str {
+                    display: flex;
+                    margin: 0 auto;
+                    margin-bottom: 0px;
+                    width: 520 / 1920 * 100vw;
+                    .popup-str-mobile {
+                        display: flex;
+                        .popup-material {
+                            margin-right: 20 / 1920 * 100vw;
+                            width: 250 / 1920 * 100vw;
+                            height: 300 / 1920 * 100vw;
+                            background: #ffffff;
+                            box-shadow: 0px 0px 10 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                            border-radius: 15 / 1920 * 100vw;
+                            img {
+                                margin-left: 45 / 1920 * 100vw;
+                                width: 160 / 1920 * 100vw;
+                                height: 124 / 1920 * 100vw;
+                                margin-top: 10 / 1920 * 100vw;
+                            }
+                            h1 {
+                                width: 218 / 1920 * 100vw;
+                                margin: 0px 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 22 / 1920 * 100vw;
+                                color: #242d39;
+                            }
+                            p {
+                                width: 227 / 1920 * 100vw;
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 15 / 1920 * 100vw;
+                                color: #242d39;
+                                span {
+                                    font-weight: 300;
+                                }
+                            }
+                            .p-smoll {
+                                span {
+                                    font-size: 14 / 1920 * 100vw;
+                                }
+                            }
+                            h2 {
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20 / 1920 * 100vw;
+                                color: #ff7a00;
+                            }
+                        }
+                        .popup-logo {
+                            width: 250 / 1920 * 100vw;
+                            height: 300 / 1920 * 100vw;
+                            img {
+                                width: 177 / 1920 * 100vw;
+                                height: 37 / 1920 * 100vw;
+                                margin: 92 / 1920 * 100vw 0px 0px 36 / 1920 * 100vw;
+                            }
+                            .social-net {
+                                margin: 9 / 1920 * 100vw 0px 0px 71 / 1920 * 100vw;
+                                a {
+                                    img {
+                                        width: 22 / 1920 * 100vw;
+                                        height: 22 / 1920 * 100vw;
+                                        margin: 0;
+                                        margin-right: 5 / 1920 * 100vw;
+                                    }
+                                }
+                            }
+                            .a-mobile {
+                                text-align: center;
+                                margin-top: 9 / 1920 * 100vw;
+                                a {
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14 / 1920 * 100vw;
+                                    color: #242d39;
+                                }
+                                .tel-1 {
+                                    margin-right: 10 / 1920 * 100vw;
+                                }
+                            }
+                            p {
+                                margin: 77 / 1920 * 100vw 0px 0px 0 / 1920 * 100vw;
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 13 / 1920 * 100vw;
+                                color: #242d39;
+                            }
+                        }
+                        .margin__none {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .popup__asphalt-crumbs {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            &:target {
+                opacity: 1;
+                visibility: visible;
+            }
+            .popup__area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -10;
+            }
+            .popup__body {
+                margin: 0 auto;
+                margin-top: 100 / 1920 * 100vw;
+                width: 604 / 1920 * 100vw;
+                height: 416 / 1920 * 100vw;
+                background-color: #ffffff;
+                box-shadow: 0px 4 / 1920 * 100vw 20 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                border-radius: 30 / 1920 * 100vw;
+                .popup__title {
+                    margin: 0 auto;
+                    display: flex;
+                    padding-top: 15 / 1920 * 100vw;
+                    width: 604 / 1920 * 100vw;
+                    margin-bottom: 20 / 1920 * 100vw;
+                    h1 {
+                        margin-left: 110 / 1920 * 100vw;
+                        text-align: center;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 35 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    a {
+                        img {
+                            margin: 7 / 1920 * 100vw 0px 0px 43 / 1920 * 100vw;
+                            width: 35 / 1920 * 100vw;
+                            height: 35 / 1920 * 100vw;
+                            border-radius: 17.5 / 1920 * 100vw;
+                            transition: 0.3s;
+                            &:hover {
+                                box-shadow: 0px 0px 7 / 1920 * 100vw rgba(0, 0, 0, 0.25);
+                            }
+                        }
+                    }
+                }
+                .popup-str {
+                    display: flex;
+                    margin: 0 auto;
+                    margin-bottom: 0px;
+                    width: 520 / 1920 * 100vw;
+                    .popup-str-mobile {
+                        display: flex;
+                        .popup-material {
+                            margin-right: 20 / 1920 * 100vw;
+                            width: 250 / 1920 * 100vw;
+                            height: 300 / 1920 * 100vw;
+                            background: #ffffff;
+                            box-shadow: 0px 0px 10 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+                            border-radius: 15 / 1920 * 100vw;
+                            img {
+                                margin-left: 45 / 1920 * 100vw;
+                                width: 160 / 1920 * 100vw;
+                                height: 124 / 1920 * 100vw;
+                                margin-top: 10 / 1920 * 100vw;
+                            }
+                            h1 {
+                                width: 218 / 1920 * 100vw;
+                                margin: 0px 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 22 / 1920 * 100vw;
+                                color: #242d39;
+                            }
+                            p {
+                                width: 227 / 1920 * 100vw;
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 15 / 1920 * 100vw;
+                                color: #242d39;
+                                span {
+                                    font-weight: 300;
+                                }
+                            }
+                            .p-smoll {
+                                span {
+                                    font-size: 14 / 1920 * 100vw;
+                                }
+                            }
+                            h2 {
+                                margin: 10 / 1920 * 100vw 0px 0px 14 / 1920 * 100vw;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20 / 1920 * 100vw;
+                                color: #ff7a00;
+                            }
+                        }
+                        .popup-logo {
+                            width: 250 / 1920 * 100vw;
+                            height: 300 / 1920 * 100vw;
+                            img {
+                                width: 177 / 1920 * 100vw;
+                                height: 37 / 1920 * 100vw;
+                                margin: 92 / 1920 * 100vw 0px 0px 36 / 1920 * 100vw;
+                            }
+                            .social-net {
+                                margin: 9 / 1920 * 100vw 0px 0px 71 / 1920 * 100vw;
+                                a {
+                                    img {
+                                        width: 22 / 1920 * 100vw;
+                                        height: 22 / 1920 * 100vw;
+                                        margin: 0;
+                                        margin-right: 5 / 1920 * 100vw;
+                                    }
+                                }
+                            }
+                            .a-mobile {
+                                text-align: center;
+                                margin-top: 9 / 1920 * 100vw;
+                                a {
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14 / 1920 * 100vw;
+                                    color: #242d39;
+                                }
+                                .tel-1 {
+                                    margin-right: 10 / 1920 * 100vw;
+                                }
+                            }
+                            p {
+                                margin: 77 / 1920 * 100vw 0px 0px 0 / 1920 * 100vw;
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 13 / 1920 * 100vw;
+                                color: #242d39;
+                            }
+                        }
+                        .margin__none {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.duties {
+    .container {
+        margin: 0 auto;
+        margin-top: 66 / 1920 * 100vw;
+        width: 1180 / 1920 * 100vw;
+        h1 {
+            margin-left: 28 / 1920 * 100vw;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40 / 1920 * 100vw;
+            color: #242d39;
+        }
+        .square {
+            margin-top: -21 / 1920 * 100vw;
+            width: 130 / 1920 * 100vw;
+            height: 18 / 1920 * 100vw;
+            background-color: #ff7a00;
+        }
+        .block {
+            display: flex;
+            margin-top: 31 / 1920 * 100vw;
+            width: 1161 / 1920 * 100vw;
+            height: 275 / 1920 * 100vw;
+            border-radius: 40 / 1920 * 100vw;
+            padding: 23 / 1920 * 100vw 0 0 19 / 1920 * 100vw;
+            box-shadow: 0px 4 / 1920 * 100vw 16 / 1920 * 100vw rgba(0, 0, 0, 0.1);
+            .number {
+                width: 242 / 1920 * 100vw;
+                img {
+                    margin-left: 50 / 1920 * 100vw;
+                    width: 141.4 / 1920 * 100vw;
+                }
+                p {
+                    text-align: center;
+                    margin-top: 9 / 1920 * 100vw;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18 / 1920 * 100vw;
+                    color: #242d39;
+                }
+            }
+            .number__line {
+                margin: 29 / 1920 * 100vw 29 / 1920 * 100vw 0 29 / 1920 * 100vw;
+                width: 1 / 1920 * 100vw;
+                height: 194 / 1920 * 100vw;
+                background-color: #eeeeee;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+.about-company {
+    margin-top: 110 / 1920 * 100vw;
+    background: url("../img/bg-about-rock.png") no-repeat center top / cover;
+    width: 100%;
+    height: 430 / 1920 * 100vw;
+    .container {
+        margin: 0 auto;
+        padding-top: 60 / 1920 * 100vw;
+        width: 1180 / 1920 * 100vw;
+        h1 {
+            text-align: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50 / 1920 * 100vw;
+            color: #ffffff;
+            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            margin-top: 34 / 1920 * 100vw;
+            text-align: center;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22 / 1920 * 100vw;
+            line-height: 140%;
+            color: #ffffff;
+            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+        img {
+            margin: 0 auto;
+            margin: 76 / 1920 * 100vw 0px 0px 570 / 1920 * 100vw;
+            width: 40 / 1920 * 100vw;
+        }
+    }
+}
+.services {
+    .container {
+        width: 1180 / 1920 * 100vw;
+        margin: 0 auto;
+        padding-top: 110 / 1920 * 100vw;
+        h1 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40 / 1920 * 100vw;
+            color: #242d39;
+            margin-bottom: 40 / 1920 * 100vw;
+        }
+        .stroka {
+            display: flex;
+            .service {
+                display: flex;
+                margin-top: 25 / 1920 * 100vw;
+                width: 580 / 1920 * 100vw;
+                height: 240 / 1920 * 100vw;
+                background-color: #f6f6f6;
+                border-radius: 15 / 1920 * 100vw;
+                transition: 0.3s;
+                &:hover {
+                    background-color: #eeeeee;
+                    & h3 {
+                        color: #ff7a00;
+                    }
+                }
+                img {
+                    border-radius: 15 / 1920 * 100vw 0px 0px 15 / 1920 * 100vw;
+                    height: 100%;
+                }
+                div {
+                    h2 {
+                        margin: 18 / 1920 * 100vw 0px 0px 25 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14 / 1920 * 100vw;
+                        text-transform: uppercase;
+                        color: #aaaaaa;
+                    }
+                    h1 {
+                        margin: 7 / 1920 * 100vw 0px 0px 25 / 1920 * 100vw;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 22 / 1920 * 100vw;
+                        color: #242d39;
+                    }
+                    p {
+                        margin: 18 / 1920 * 100vw 0px 0px 25 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14 / 1920 * 100vw;
+                        color: #6d6d6d;
+                    }
+                    h3 {
+                        transition: 0.3s;
+                        margin: 18 / 1920 * 100vw 0px 0px 25 / 1920 * 100vw;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16 / 1920 * 100vw;
+                        text-transform: uppercase;
+                        color: #aaaaaa;
+                    }
+                }
+            }
+            .marg-r {
+                margin-right: 20 / 1920 * 100vw;
+            }
+        }
+    }
+}
+.popup__form {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    .popup__area {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -10;
+    }
+    .popup__body {
+        margin: 0 auto;
+        margin-top: 150 / 1920 * 100vw;
+        width: 460 / 1920 * 100vw;
+        height: 620 / 1920 * 100vw;
+        background-color: #ffffff;
+        box-shadow: 0px 4 / 1920 * 100vw 20 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+        border-radius: 30 / 1920 * 100vw;
+        .popup__title {
+            margin: 0 auto;
+            display: flex;
+            padding-top: 15 / 1920 * 100vw;
+            width: 460 / 1920 * 100vw;
+            margin-bottom: 28 / 1920 * 100vw;
+            h1 {
+                margin-left: 119 / 1920 * 100vw;
+                text-align: center;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 35 / 1920 * 100vw;
+                color: #242d39;
+            }
+            a {
+                img {
+                    margin: 7 / 1920 * 100vw 0px 0px 53 / 1920 * 100vw;
+                    width: 35 / 1920 * 100vw;
+                    height: 35 / 1920 * 100vw;
+                    border-radius: 17.5 / 1920 * 100vw;
+                    transition: 0.3s;
+                    &:hover {
+                        box-shadow: 0px 0px 7 / 1920 * 100vw rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+        }
+        form {
+            margin: 0 auto;
+            width: 340 / 1920 * 100vw;
+            h2 {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14 / 1920 * 100vw;
+                text-transform: uppercase;
+                color: #6d6d6d;
+            }
+            input {
+                height: 21 / 1920 * 100vw;
+                padding-bottom: 12 / 1920 * 100vw;
+                width: 100%;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16 / 1920 * 100vw;
+                color: #6d6d6d;
+                background: none;
+                &.error ~ .sdasd {
+                    background-color: rgb(194, 0, 0);
+                }
+            }
+            .service {
+                padding: 0;
+                margin: 4 / 1920 * 100vw 0px 28 / 1920 * 100vw 0px;
+                padding-left: 11 / 1920 * 100vw;
+                width: 330 / 1920 * 100vw;
+                height: 30 / 1920 * 100vw;
+                border-radius: 6 / 1920 * 100vw;
+                background-color: #f7f7f7;
+                outline: none;
+                border: none;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16 / 1920 * 100vw;
+                color: #6d6d6d;
+            }
+            p {
+                margin-bottom: 20 / 1920 * 100vw;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16 / 1920 * 100vw;
+                color: #6d6d6d;
+            }
+            textarea {
+                padding-bottom: 10 / 1920 * 100vw;
+                width: 100%;
+                height: 21 / 1920 * 100vw;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16 / 1920 * 100vw;
+                color: #6d6d6d;
+                background: none;
+            }
+            .form-line {
+                margin: 0 0 30 / 1920 * 100vw 0;
+                width: 100%;
+                height: 1 / 1920 * 100vw;
+                background-color: #aaaaaa;
+                transition: 0.3s;
+            }
+            .footer-button {
+                span {
+                    button {
+                        margin-top: 10 / 1920 * 100vw;
+                        width: 100%;
+                        height: 59 / 1920 * 100vw;
+                        border-radius: 30 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16 / 1920 * 100vw;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        background-color: #ff7a00;
+                    }
+                }
+                div {
+                    margin: 0 auto;
+                    width: 100%;
+                    margin-top: 25 / 1920 * 100vw;
+                    a {
+                        text-align: center;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 13 / 1920 * 100vw;
+                        line-height: 0px;
+                        color: #737373;
+                        span {
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.accordion {
+    .container {
+        margin: 0 auto;
+        margin-top: 66 / 1920 * 100vw;
+        width: 1145 / 1920 * 100vw;
+        h1 {
+            margin-bottom: 54 / 1920 * 100vw;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20 / 1920 * 100vw;
+            text-align: center;
+            color: #ff7a00;
+        }
+        .sub__accordion {
+            .accordion-line {
+                width: 100%;
+                height: 1 / 1920 * 100vw;
+                background-color: #c4c4c4;
+            }
+            .accordion-item {
+                .accordion-item__trigger {
+                    display: flex;
+                    padding: 30 / 1920 * 100vw 0 30 / 1920 * 100vw 0;
+                    cursor: pointer;
+                    h2 {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 20 / 1920 * 100vw;
+                        color: #3c3c3c;
+                    }
+                    img {
+                        margin-left: auto;
+                        margin-right: 19 / 1920 * 100vw;
+                        max-width: 30 / 1920 * 100vw;
+                        max-height: 15 / 1920 * 100vw;
+                        transition: 0.4s;
+                    }
+                }
+                .accordion-item__content {
+                    display: none;
+                    p {
+                        margin-bottom: 30 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18 / 1920 * 100vw;
+                        color: #3c3c3c;
+                    }
+                }
+            }
+            .accordion-item--active {
+                .accordion-item__content {
+                    display: block;
+                    img {
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+            .accordion-item--active {
+                .accordion-item__trigger {
+                    img {
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+        }
+        a {
+            display: block;
+            margin: 0 auto;
+            margin-top: 54 / 1920 * 100vw;
+            width: 189 / 1920 * 100vw;
+            padding: 20 / 1920 * 100vw 30 / 1920 * 100vw;
+            border: 1 / 1920 * 100vw solid #ff7a00;
+            border-radius: 30 / 1920 * 100vw;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16 / 1920 * 100vw;
+            text-transform: uppercase;
+            color: #3c3c3c;
+            transition: 0.3s;
+            &:hover {
+                background-color: #ff7a00;
+                color: #ffffff;
+            }
+        }
+    }
+}
+.forma {
+    width: 100%;
+    height: 565 / 1920 * 100vw;
+    background-color: #f1f1f1;
+    margin-top: 66 / 1920 * 100vw;
+    .container {
+        margin: 0 auto;
+        padding-top: 89 / 1920 * 100vw;
+        width: 1180 / 1920 * 100vw;
+        display: flex;
+        h1 {
+            margin-right: 166 / 1920 * 100vw;
+            width: 442 / 1920 * 100vw;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 46 / 1920 * 100vw;
+            color: #242d39;
+        }
+        form {
+            width: 526 / 1920 * 100vw;
+            height: 387 / 1920 * 100vw;
+            input {
+                padding-bottom: 10 / 1920 * 100vw;
+                width: 100%;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16 / 1920 * 100vw;
+                color: #6d6d6d;
+                background: none;
+                &.error ~ .sdasd {
+                    background-color: rgb(194, 0, 0);
+                }
+            }
+            p {
+                margin-bottom: 25 / 1920 * 100vw;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16 / 1920 * 100vw;
+                color: #6d6d6d;
+            }
+            textarea {
+                padding-bottom: 10 / 1920 * 100vw;
+                width: 100%;
+                height: 21 / 1920 * 100vw;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16 / 1920 * 100vw;
+                line-height: 21 / 1920 * 100vw;
+                color: #6d6d6d;
+                background: none;
+            }
+            .form-line {
+                margin: 0 0 40 / 1920 * 100vw 0;
+                width: 100%;
+                height: 1 / 1920 * 100vw;
+                background-color: #aaaaaa;
+                transition: 0.3s;
+            }
+            div {
+                display: flex;
+                span {
+                    button {
+                        width: 234 / 1920 * 100vw;
+                        height: 59 / 1920 * 100vw;
+                        border-radius: 30 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16 / 1920 * 100vw;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        background-color: #ff7a00;
+                    }
+                }
+                div {
+                    a {
+                        margin-left: 40 / 1920 * 100vw;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12 / 1920 * 100vw;
+                        color: #737373;
+                        span {
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.block-fixed {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+}
+
+@media (max-width: 575px) {
+    .materials {
+        .container {
+            padding-top: 32 / 375 * 100vw;
+            width: 340 / 375 * 100vw;
+            h1 {
+                margin-bottom: 20 / 375 * 100vw;
+                font-size: 27 / 375 * 100vw;
+            }
+            .mat-str {
+                display: block;
+                margin: 0;
+                .mat-str__mobile {
+                    margin-bottom: 10 / 375 * 100vw;
+                    a {
+                        .material {
+                            margin-right: 12 / 375 * 100vw;
+                            width: 164 / 375 * 100vw;
+                            height: 188 / 375 * 100vw;
+                            border-radius: 15 / 375 * 100vw;
+                            transition: 0.3s;
+                            img {
+                                width: 100%;
+                                height: 123 / 375 * 100vw;
+                                border-radius: 15 / 375 * 100vw 15 / 375 * 100vw 0px 0px;
+                                margin: 0;
+                            }
+                            h1 {
+                                margin: 0;
+                                margin-top: 5 / 375 * 100vw;
+                                font-size: 13 / 375 * 100vw;
+                            }
+                            p {
+                                margin: 4 / 375 * 100vw 0px 0px 0px;
+                                font-size: 12 / 375 * 100vw;
+                            }
+                            .p1 {
+                                margin-top: 0 / 375 * 100vw;
+                                padding: 6 / 375 * 100vw 49.5 / 375 * 100vw;
+                                font-size: 11 / 375 * 100vw;
+                            }
+                            &:hover {
+                                margin-top: -4 / 375 * 100vw;
+                                box-shadow: 0px 5 / 375 * 100vw 5 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                            }
+                        }
+                    }
+                    .margin__none {
+                        margin: 0px;
+                    }
+                    .margin__none-mobile {
+                        margin: 0px;
+                    }
+                }
+                .calculator {
+                    margin: 0;
+                    margin: 0 auto;
+                    margin-top: 40 / 375 * 100vw;
+                    width: 303 / 375 * 100vw;
+                    height: auto;
+                    border-radius: 0px;
+                    background: none;
+                    img {
+                        display: none;
+                    }
+                    h1 {
+                        margin: 0;
+                        font-size: 19 / 375 * 100vw;
+                    }
+                    p {
+                        margin: 0 auto;
+                        width: 303 / 375 * 100vw;
+                        margin-top: 9 / 375 * 100vw;
+                        font-size: 20 / 375 * 100vw;
+                    }
+                    a {
+                        margin-top: 40 / 375 * 100vw;
+                        padding: 20 / 375 * 100vw 88 / 375 * 100vw;
+                        border: 1 / 375 * 100vw solid #ff7a00;
+                        border-radius: 30 / 375 * 100vw;
+                        width: 94 / 375 * 100vw;
+                        font-size: 16 / 375 * 100vw;
+                    }
+                }
+            }
+        }
+    }
+    .popups {
+        .container {
+            .popup__sand {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                &:target {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .popup__area {
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -10;
+                }
+                .popup__body {
+                    margin-top: 35 / 375 * 100vw;
+                    width: 340 / 375 * 100vw;
+                    height: 644 / 375 * 100vw;
+                    box-shadow: 0px 4 / 375 * 100vw 20 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                    border-radius: 15 / 375 * 100vw;
+                    .popup__title {
+                        padding-top: 13 / 375 * 100vw;
+                        width: 312 / 375 * 100vw;
+                        margin-bottom: 12 / 375 * 100vw;
+                        h1 {
+                            margin-left: 118 / 375 * 100vw;
+                            font-size: 23 / 375 * 100vw;
+                        }
+                        a {
+                            img {
+                                margin: 0 / 375 * 100vw 0px 0px 95 / 375 * 100vw;
+                                width: 23 / 375 * 100vw;
+                                height: 23 / 375 * 100vw;
+                                border-radius: 11.5 / 375 * 100vw;
+                                &:hover {
+                                    box-shadow: 0px 0px 4 / 375 * 100vw rgba(0, 0, 0, 0.25);
+                                }
+                            }
+                        }
+                    }
+                    .popup__sand-str {
+                        display: block;
+                        margin-bottom: 0px;
+                        margin-top: 0;
+                        width: 322 / 375 * 100vw;
+                        .popup__sand-str-mobile {
+                            display: flex;
+                            margin-bottom: 10 / 375 * 100vw;
+                            .popup-material {
+                                margin-right: 10 / 375 * 100vw;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                box-shadow: 0px 0px 10 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                                border-radius: 15 / 375 * 100vw;
+                                img {
+                                    display: none;
+                                }
+                                h1 {
+                                    width: 142 / 375 * 100vw;
+                                    margin: 14 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-size: 15 / 375 * 100vw;
+                                }
+                                p {
+                                    width: 142 / 375 * 100vw;
+                                    height: 50 / 375 * 100vw;
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-size: 11 / 375 * 100vw;
+                                    span {
+                                        font-weight: 300;
+                                    }
+                                }
+                                h2 {
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-size: 14 / 375 * 100vw;
+                                }
+                            }
+                            .margin__none {
+                                margin: 0;
+                            }
+                            .margin__none-mobile {
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .foot {
+                        display: none;
+                    }
+                }
+            }
+            .popup__crush-stone {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                &:target {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .popup__area {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -10;
+                }
+                .popup__body {
+                    margin: 0 auto;
+                    margin-top: 35 / 375 * 100vw;
+                    width: 340 / 375 * 100vw;
+                    height: 348 / 375 * 100vw;
+                    background-color: #ffffff;
+                    box-shadow: 0px 4 / 375 * 100vw 20 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                    border-radius: 15 / 375 * 100vw;
+                    .popup__title {
+                        margin: 0 auto;
+                        display: flex;
+                        padding-top: 13 / 375 * 100vw;
+                        width: 340 / 375 * 100vw;
+                        margin-bottom: 18 / 375 * 100vw;
+                        h1 {
+                            margin-left: 128 / 375 * 100vw;
+                            text-align: center;
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 19 / 375 * 100vw;
+                            color: #242d39;
+                        }
+                        a {
+                            img {
+                                margin: 0 / 375 * 100vw 0px 0px 91 / 375 * 100vw;
+                                width: 23 / 375 * 100vw;
+                                height: 23 / 375 * 100vw;
+                                border-radius: 11.5 / 375 * 100vw;
+                                transition: 0.3s;
+                                &:hover {
+                                    box-shadow: 0px 0px 7 / 375 * 100vw rgba(0, 0, 0, 0.25);
+                                }
+                            }
+                        }
+                    }
+                    .popup-str {
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 0px;
+                        width: 322 / 375 * 100vw;
+                        .popup-str-mobile {
+                            display: flex;
+                            margin-bottom: 10 / 375 * 100vw;
+                            .popup-material {
+                                margin-right: 10 / 375 * 100vw;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                background: #ffffff;
+                                box-shadow: 0px 0px 10 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                                border-radius: 15 / 375 * 100vw;
+                                img {
+                                    display: none;
+                                }
+                                h1 {
+                                    width: 142 / 375 * 100vw;
+                                    margin: 7 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 15 / 375 * 100vw;
+                                    color: #242d39;
+                                }
+                                p {
+                                    width: 142 / 375 * 100vw;
+                                    height: 54 / 375 * 100vw;
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Inter";
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 12 / 375 * 100vw;
+                                    color: #242d39;
+                                    span {
+                                        font-weight: 300;
+                                    }
+                                }
+                                h2 {
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14 / 375 * 100vw;
+                                    color: #ff7a00;
+                                }
+                            }
+                            .popup-logo {
+                                display: block;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                img {
+                                    margin: 32 / 375 * 100vw 0px 0px 24 / 375 * 100vw;
+                                    width: 106 / 375 * 100vw;
+                                    height: 22 / 375 * 100vw;
+                                }
+                                .social-net {
+                                    margin: 7 / 375 * 100vw 0px 0px 32 / 375 * 100vw;
+                                    a {
+                                        img {
+                                            margin: 0;
+                                            width: 19.17 / 375 * 100vw;
+                                            height: 19.17 / 375 * 100vw;
+                                        }
+                                    }
+                                }
+                                .a-mobile {
+                                    margin: 5.8 / 375 * 100vw 0px 0px 0px;
+                                    a {
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 9 / 375 * 100vw;
+                                        color: #242d39;
+                                    }
+                                    .tel-1 {
+                                        margin-right: 7 / 375 * 100vw;
+                                    }
+                                }
+                                p {
+                                    margin-top: 22 / 375 * 100vw;
+                                    font-family: "Inter";
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 7 / 375 * 100vw;
+                                    color: #242d39;
+                                }
+                            }
+                            .margin__none {
+                                margin: 0;
+                            }
+                            .margin__none-mobile {
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .foot {
+                        display: none;
+                    }
+                }
+            }
+            .popup__gravel {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                &:target {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .popup__area {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -10;
+                }
+                .popup__body {
+                    margin: 0 auto;
+                    margin-top: 35 / 375 * 100vw;
+                    width: 340 / 375 * 100vw;
+                    height: 348 / 375 * 100vw;
+                    background-color: #ffffff;
+                    box-shadow: 0px 4 / 375 * 100vw 20 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                    border-radius: 15 / 375 * 100vw;
+                    .popup__title {
+                        margin: 0 auto;
+                        display: flex;
+                        padding-top: 13 / 375 * 100vw;
+                        width: 340 / 375 * 100vw;
+                        margin-bottom: 18 / 375 * 100vw;
+                        h1 {
+                            margin-left: 128 / 375 * 100vw;
+                            text-align: center;
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 19 / 375 * 100vw;
+                            color: #242d39;
+                        }
+                        a {
+                            img {
+                                margin: 0 / 375 * 100vw 0px 0px 91 / 375 * 100vw;
+                                width: 23 / 375 * 100vw;
+                                height: 23 / 375 * 100vw;
+                                border-radius: 11.5 / 375 * 100vw;
+                                transition: 0.3s;
+                                &:hover {
+                                    box-shadow: 0px 0px 7 / 375 * 100vw rgba(0, 0, 0, 0.25);
+                                }
+                            }
+                        }
+                    }
+                    .popup-str {
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 0px;
+                        width: 322 / 375 * 100vw;
+                        .popup-str-mobile {
+                            display: flex;
+                            margin-bottom: 10 / 375 * 100vw;
+                            .popup-material {
+                                margin-right: 10 / 375 * 100vw;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                background: #ffffff;
+                                box-shadow: 0px 0px 10 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                                border-radius: 15 / 375 * 100vw;
+                                img {
+                                    display: none;
+                                }
+                                h1 {
+                                    width: 142 / 375 * 100vw;
+                                    margin: 7 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 15 / 375 * 100vw;
+                                    color: #242d39;
+                                }
+                                p {
+                                    width: 142 / 375 * 100vw;
+                                    height: 54 / 375 * 100vw;
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Inter";
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 12 / 375 * 100vw;
+                                    color: #242d39;
+                                    span {
+                                        font-weight: 300;
+                                    }
+                                }
+                                .p-smoll {
+                                    span {
+                                        font-size: 11 / 375 * 100vw;
+                                    }
+                                }
+                                h2 {
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14 / 375 * 100vw;
+                                    color: #ff7a00;
+                                }
+                            }
+                            .margin__none {
+                                margin: 0;
+                            }
+                            .margin__none-mobile {
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .foot {
+                        display: none;
+                    }
+                }
+            }
+            .popup__ground {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                &:target {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .popup__area {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -10;
+                }
+                .popup__body {
+                    margin: 0 auto;
+                    margin-top: 35 / 375 * 100vw;
+                    width: 340 / 375 * 100vw;
+                    height: 348 / 375 * 100vw;
+                    background-color: #ffffff;
+                    box-shadow: 0px 4 / 375 * 100vw 20 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                    border-radius: 15 / 375 * 100vw;
+                    .popup__title {
+                        margin: 0 auto;
+                        display: flex;
+                        padding-top: 13 / 375 * 100vw;
+                        width: 340 / 375 * 100vw;
+                        margin-bottom: 18 / 375 * 100vw;
+                        h1 {
+                            margin-left: 140 / 375 * 100vw;
+                            text-align: center;
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 19 / 375 * 100vw;
+                            color: #242d39;
+                        }
+                        a {
+                            img {
+                                margin: 0 / 375 * 100vw 0px 0px 104 / 375 * 100vw;
+                                width: 23 / 375 * 100vw;
+                                height: 23 / 375 * 100vw;
+                                border-radius: 11.5 / 375 * 100vw;
+                                transition: 0.3s;
+                                &:hover {
+                                    box-shadow: 0px 0px 7 / 375 * 100vw rgba(0, 0, 0, 0.25);
+                                }
+                            }
+                        }
+                    }
+                    .popup-str {
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 0px;
+                        width: 322 / 375 * 100vw;
+                        .popup-str-mobile {
+                            display: flex;
+                            margin-bottom: 10 / 375 * 100vw;
+                            .popup-material {
+                                margin-right: 10 / 375 * 100vw;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                background: #ffffff;
+                                box-shadow: 0px 0px 10 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                                border-radius: 15 / 375 * 100vw;
+                                img {
+                                    display: none;
+                                }
+                                h1 {
+                                    width: 142 / 375 * 100vw;
+                                    margin: 7 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 15 / 375 * 100vw;
+                                    color: #242d39;
+                                }
+                                p {
+                                    width: 142 / 375 * 100vw;
+                                    height: 54 / 375 * 100vw;
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Inter";
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 12 / 375 * 100vw;
+                                    color: #242d39;
+                                    span {
+                                        font-weight: 300;
+                                    }
+                                }
+                                .p-smoll {
+                                    span {
+                                        font-size: 12 / 375 * 100vw;
+                                    }
+                                }
+                                h2 {
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14 / 375 * 100vw;
+                                    color: #ff7a00;
+                                }
+                            }
+                            .popup-logo {
+                                display: block;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                img {
+                                    margin: 32 / 375 * 100vw 0px 0px 24 / 375 * 100vw;
+                                    width: 106 / 375 * 100vw;
+                                    height: 22 / 375 * 100vw;
+                                }
+                                .social-net {
+                                    margin: 7 / 375 * 100vw 0px 0px 32 / 375 * 100vw;
+                                    a {
+                                        img {
+                                            margin: 0;
+                                            width: 19.17 / 375 * 100vw;
+                                            height: 19.17 / 375 * 100vw;
+                                        }
+                                    }
+                                }
+                                .a-mobile {
+                                    margin: 5.8 / 375 * 100vw 0px 0px 0px;
+                                    a {
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 9 / 375 * 100vw;
+                                        color: #242d39;
+                                    }
+                                    .tel-1 {
+                                        margin-right: 7 / 375 * 100vw;
+                                    }
+                                }
+                                p {
+                                    margin-top: 22 / 375 * 100vw;
+                                    font-family: "Inter";
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 7 / 375 * 100vw;
+                                    color: #242d39;
+                                }
+                            }
+                            .margin__none {
+                                margin: 0;
+                            }
+                            .margin__none-mobile {
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .foot {
+                        display: none;
+                    }
+                }
+            }
+            .popup__brick {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                &:target {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .popup__area {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -10;
+                }
+                .popup__body {
+                    margin: 0 auto;
+                    margin-top: 35 / 375 * 100vw;
+                    width: 340 / 375 * 100vw;
+                    height: 200 / 375 * 100vw;
+                    background-color: #ffffff;
+                    box-shadow: 0px 4 / 375 * 100vw 20 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                    border-radius: 15 / 375 * 100vw;
+                    .popup__title {
+                        margin: 0 auto;
+                        display: flex;
+                        padding-top: 13 / 375 * 100vw;
+                        width: 340 / 375 * 100vw;
+                        margin-bottom: 18 / 375 * 100vw;
+                        h1 {
+                            margin-left: 86 / 375 * 100vw;
+                            text-align: center;
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 19 / 375 * 100vw;
+                            color: #242d39;
+                        }
+                        a {
+                            img {
+                                margin: 0 / 375 * 100vw 0px 0px 50 / 375 * 100vw;
+                                width: 23 / 375 * 100vw;
+                                height: 23 / 375 * 100vw;
+                                border-radius: 11.5 / 375 * 100vw;
+                                transition: 0.3s;
+                                &:hover {
+                                    box-shadow: 0px 0px 7 / 375 * 100vw rgba(0, 0, 0, 0.25);
+                                }
+                            }
+                        }
+                    }
+                    .popup-str {
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 0px;
+                        width: 322 / 375 * 100vw;
+                        .popup-str-mobile {
+                            display: flex;
+                            margin-bottom: 10 / 375 * 100vw;
+                            .popup-material {
+                                margin-right: 10 / 375 * 100vw;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                background: #ffffff;
+                                box-shadow: 0px 0px 10 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                                border-radius: 15 / 375 * 100vw;
+                                img {
+                                    display: none;
+                                }
+                                h1 {
+                                    width: 142 / 375 * 100vw;
+                                    margin: 7 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 15 / 375 * 100vw;
+                                    color: #242d39;
+                                }
+                                p {
+                                    width: 142 / 375 * 100vw;
+                                    height: 54 / 375 * 100vw;
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Inter";
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 12 / 375 * 100vw;
+                                    color: #242d39;
+                                    span {
+                                        font-weight: 300;
+                                    }
+                                }
+                                h2 {
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14 / 375 * 100vw;
+                                    color: #ff7a00;
+                                }
+                            }
+                            .popup-logo {
+                                display: block;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                img {
+                                    margin: 32 / 375 * 100vw 0px 0px 24 / 375 * 100vw;
+                                    width: 106 / 375 * 100vw;
+                                    height: 22 / 375 * 100vw;
+                                }
+                                .social-net {
+                                    margin: 7 / 375 * 100vw 0px 0px 32 / 375 * 100vw;
+                                    a {
+                                        img {
+                                            margin: 0;
+                                            width: 19.17 / 375 * 100vw;
+                                            height: 19.17 / 375 * 100vw;
+                                        }
+                                    }
+                                }
+                                .a-mobile {
+                                    margin: 5.8 / 375 * 100vw 0px 0px 0px;
+                                    a {
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 9 / 375 * 100vw;
+                                        color: #242d39;
+                                    }
+                                    .tel-1 {
+                                        margin-right: 7 / 375 * 100vw;
+                                    }
+                                }
+                                p {
+                                    margin-top: 20 / 375 * 100vw;
+                                    font-family: "Inter";
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 7 / 375 * 100vw;
+                                    color: #242d39;
+                                }
+                            }
+                            .margin__none {
+                                margin: 0;
+                            }
+                            .margin__none-mobile {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .popup__asphalt-crumbs {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                &:target {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .popup__area {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -10;
+                }
+                .popup__body {
+                    margin: 0 auto;
+                    margin-top: 35 / 375 * 100vw;
+                    width: 340 / 375 * 100vw;
+                    height: 200 / 375 * 100vw;
+                    background-color: #ffffff;
+                    box-shadow: 0px 4 / 375 * 100vw 20 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                    border-radius: 15 / 375 * 100vw;
+                    .popup__title {
+                        margin: 0 auto;
+                        display: flex;
+                        padding-top: 13 / 375 * 100vw;
+                        width: 340 / 375 * 100vw;
+                        margin-bottom: 18 / 375 * 100vw;
+                        h1 {
+                            margin-left: 65 / 375 * 100vw;
+                            text-align: center;
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 19 / 375 * 100vw;
+                            color: #242d39;
+                        }
+                        a {
+                            img {
+                                margin: 0 / 375 * 100vw 0px 0px 29 / 375 * 100vw;
+                                width: 23 / 375 * 100vw;
+                                height: 23 / 375 * 100vw;
+                                border-radius: 11.5 / 375 * 100vw;
+                                transition: 0.3s;
+                                &:hover {
+                                    box-shadow: 0px 0px 7 / 375 * 100vw rgba(0, 0, 0, 0.25);
+                                }
+                            }
+                        }
+                    }
+                    .popup-str {
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 0px;
+                        width: 322 / 375 * 100vw;
+                        .popup-str-mobile {
+                            display: flex;
+                            margin-bottom: 10 / 375 * 100vw;
+                            .popup-material {
+                                margin-right: 10 / 375 * 100vw;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                background: #ffffff;
+                                box-shadow: 0px 0px 10 / 375 * 100vw rgba(0, 0, 0, 0.15);
+                                border-radius: 15 / 375 * 100vw;
+                                img {
+                                    display: none;
+                                }
+                                h1 {
+                                    width: 142 / 375 * 100vw;
+                                    margin: 7 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 15 / 375 * 100vw;
+                                    color: #242d39;
+                                }
+                                p {
+                                    width: 142 / 375 * 100vw;
+                                    height: 54 / 375 * 100vw;
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Inter";
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 12 / 375 * 100vw;
+                                    color: #242d39;
+                                    span {
+                                        font-weight: 300;
+                                    }
+                                }
+                                h2 {
+                                    margin: 6 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14 / 375 * 100vw;
+                                    color: #ff7a00;
+                                }
+                            }
+                            .popup-logo {
+                                display: block;
+                                width: 156 / 375 * 100vw;
+                                height: 138 / 375 * 100vw;
+                                img {
+                                    margin: 32 / 375 * 100vw 0px 0px 24 / 375 * 100vw;
+                                    width: 106 / 375 * 100vw;
+                                    height: 22 / 375 * 100vw;
+                                }
+                                .social-net {
+                                    margin: 7 / 375 * 100vw 0px 0px 32 / 375 * 100vw;
+                                    a {
+                                        img {
+                                            margin: 0;
+                                            width: 19.17 / 375 * 100vw;
+                                            height: 19.17 / 375 * 100vw;
+                                        }
+                                    }
+                                }
+                                .a-mobile {
+                                    margin: 5.8 / 375 * 100vw 0px 0px 0px;
+                                    a {
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 9 / 375 * 100vw;
+                                        color: #242d39;
+                                    }
+                                    .tel-1 {
+                                        margin-right: 7 / 375 * 100vw;
+                                    }
+                                }
+                                p {
+                                    margin-top: 20 / 375 * 100vw;
+                                    font-family: "Inter";
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 7 / 375 * 100vw;
+                                    color: #242d39;
+                                }
+                            }
+                            .margin__none {
+                                margin: 0;
+                            }
+                            .margin__none-mobile {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .duties {
+        display: none;
+    }
+    .about-company {
+        margin-top: 80 / 375 * 100vw;
+        background: url("../img/bg-about-rock.png") no-repeat center top / cover;
+        width: 100%;
+        height: 282 / 375 * 100vw;
+        .container {
+            margin: 0 auto;
+            padding-top: 37 / 375 * 100vw;
+            width: 340 / 375 * 100vw;
+            #about-company {
+                position: absolute;
+                top: 1810px;
+                width: 10 / 1920 * 100vw;
+                height: 10 / 1920 * 100vw;
+            }
+            h1 {
+                font-size: 26 / 375 * 100vw;
+                text-shadow: 0px 4 / 375 * 100vw 10 / 375 * 100vw rgba(0, 0, 0, 0.25);
+            }
+            p {
+                margin-top: 15 / 375 * 100vw;
+                font-size: 11 / 375 * 100vw;
+                text-shadow: 0px 4 / 375 * 100vw 10 / 375 * 100vw rgba(0, 0, 0, 0.25);
+            }
+            img {
+                margin: 0 auto;
+                margin: 36 / 375 * 100vw 0px 0px 162 / 375 * 100vw;
+                width: 25 / 375 * 100vw;
+            }
+        }
+    }
+    .services {
+        .container {
+            padding-top: 50 / 375 * 100vw;
+            margin: 0 auto;
+            width: 340 / 375 * 100vw;
+            h1 {
+                font-size: 22 / 375 * 100vw;
+                margin-bottom: 14 / 375 * 100vw;
+            }
+            .stroka {
+                display: block;
+                .service {
+                    display: flex;
+                    margin-bottom: 10 / 375 * 100vw;
+                    width: 340 / 375 * 100vw;
+                    height: 144 / 375 * 100vw;
+                    border-radius: 10 / 375 * 100vw;
+                    img {
+                        border-radius: 10 / 375 * 100vw 0px 0px 10 / 375 * 100vw;
+                        height: 100%;
+                        width: 170 / 375 * 100vw;
+                    }
+                    div {
+                        h2 {
+                            margin: 9 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                            font-size: 8 / 375 * 100vw;
+                        }
+                        h1 {
+                            margin: 3 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                            font-size: 15 / 375 * 100vw;
+                        }
+                        p {
+                            margin: 7 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                            font-size: 9 / 375 * 100vw;
+                        }
+                        h3 {
+                            margin: 7 / 375 * 100vw 0px 0px 7 / 375 * 100vw;
+                            font-size: 10 / 375 * 100vw;
+                            color: #ff7a00;
+                        }
+                    }
+                }
+                .marg-r {
+                    margin-right: 20 / 375 * 100vw;
+                }
+            }
+        }
+    }
+    .popup__form {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+        .popup__area {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -10;
+        }
+        .popup__body {
+            margin: 0 auto;
+            margin-top: 35 / 375 * 100vw;
+            width: 340 / 375 * 100vw;
+            height: 465 / 375 * 100vw;
+            background-color: #ffffff;
+            box-shadow: 0px 4 / 375 * 100vw 20 / 375 * 100vw rgba(0, 0, 0, 0.15);
+            border-radius: 20 / 375 * 100vw;
+            .popup__title {
+                margin: 0 auto;
+                display: flex;
+                padding-top: 15 / 375 * 100vw;
+                width: 340 / 375 * 100vw;
+                margin-bottom: 15 / 375 * 100vw;
+                h1 {
+                    margin-left: 110 / 375 * 100vw;
+                    text-align: center;
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 19 / 375 * 100vw;
+                    color: #242d39;
+                }
+                a {
+                    img {
+                        margin: 0 / 375 * 100vw 0px 0px 73 / 375 * 100vw;
+                        width: 23 / 375 * 100vw;
+                        height: 23 / 375 * 100vw;
+                        border-radius: 17.5 / 375 * 100vw;
+                        transition: 0.3s;
+                        &:hover {
+                            box-shadow: 0px 0px 7 / 375 * 100vw rgba(0, 0, 0, 0.25);
+                        }
+                    }
+                }
+            }
+            form {
+                width: 280 / 375 * 100vw;
+                h2 {
+                    font-size: 14 / 375 * 100vw;
+                }
+                input {
+                    height: 21 / 375 * 100vw;
+                    padding-bottom: 7 / 375 * 100vw;
+                    font-size: 13 / 375 * 100vw;
+                }
+                .service {
+                    padding: 0;
+                    margin: 4 / 375 * 100vw 0px 15 / 375 * 100vw 0px;
+                    padding-left: 11 / 375 * 100vw;
+                    width: 269 / 375 * 100vw;
+                    height: 30 / 375 * 100vw;
+                    border-radius: 6 / 375 * 100vw;
+                    font-size: 16 / 375 * 100vw;
+                }
+                p {
+                    margin-bottom: 17 / 375 * 100vw;
+                    font-size: 13 / 375 * 100vw;
+                }
+                textarea {
+                    padding-bottom: 7 / 375 * 100vw;
+                    height: 21 / 375 * 100vw;
+                    font-size: 13 / 375 * 100vw;
+                    line-height: 21 / 375 * 100vw;
+                }
+                .form-line {
+                    margin: 0 0 22 / 375 * 100vw 0;
+                    height: 1 / 375 * 100vw;
+                }
+                .footer-button {
+                    span {
+                        button {
+                            margin-top: 0 / 375 * 100vw;
+                            height: 59 / 375 * 100vw;
+                            border-radius: 30 / 375 * 100vw;
+                            font-size: 16 / 375 * 100vw;
+                        }
+                    }
+                    div {
+                        width: 100%;
+                        margin-top: 10 / 375 * 100vw;
+                        a {
+                            font-size: 10 / 375 * 100vw;
+                            span {
+                                margin: 0;
+                                line-height: 0px;
+                                font-size: 10 / 375 * 100vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .accordion {
+        .container {
+            padding-top: 50 / 375 * 100vw;
+            margin: 0 auto;
+            width: 340 / 375 * 100vw;
+            h1 {
+                margin-bottom: 32 / 375 * 100vw;
+                font-size: 20 / 375 * 100vw;
+            }
+            .sub__accordion {
+                .accordion-line {
+                    height: 1 / 375 * 100vw;
+                }
+                .accordion-item {
+                    .accordion-item__trigger {
+                        display: flex;
+                        padding: 30 / 375 * 100vw 0 30 / 375 * 100vw 0;
+                        cursor: pointer;
+                        h2 {
+                            font-size: 16 / 375 * 100vw;
+                        }
+                        img {
+                            margin-right: 19 / 375 * 100vw;
+                            max-width: 30 / 375 * 100vw;
+                            max-height: 15 / 375 * 100vw;
+                        }
+                    }
+                    .accordion-item__content {
+                        display: none;
+                        p {
+                            margin-bottom: 30 / 375 * 100vw;
+                            font-size: 16 / 375 * 100vw;
+                        }
+                    }
+                }
+                .accordion-item--active {
+                    .accordion-item__content {
+                        display: block;
+                    }
+                }
+                .accordion-item--active {
+                    .accordion-item__trigger {
+                        img {
+                            transform: rotate(-180deg);
+                        }
+                    }
+                }
+            }
+            a {
+                margin-top: 37 / 375 * 100vw;
+                width: 166 / 375 * 100vw;
+                padding: 20 / 375 * 100vw 52 / 375 * 100vw;
+                border: 1 / 375 * 100vw solid #ff7a00;
+                border-radius: 30 / 375 * 100vw;
+                font-size: 14 / 375 * 100vw;
+            }
+        }
+    }
+    .forma {
+        width: 100%;
+        height: 641 / 375 * 100vw;
+        background-color: #f1f1f1;
+        margin-top: 66 / 375 * 100vw;
+        .container {
+            margin: 0 auto;
+            padding-top: 49 / 375 * 100vw;
+            width: 340 / 375 * 100vw;
+            display: block;
+            h1 {
+                width: 330 / 375 * 100vw;
+                margin: 0px;
+                font-size: 26 / 375 * 100vw;
+            }
+            form {
+                margin-top: 40 / 375 * 100vw;
+                width: 340 / 375 * 100vw;
+                input {
+                    padding-bottom: 10 / 375 * 100vw;
+                    width: 100%;
+                    font-size: 16 / 375 * 100vw;
+                }
+                p {
+                    margin-bottom: 25 / 375 * 100vw;
+                    font-size: 16 / 375 * 100vw;
+                }
+                textarea {
+                    padding-bottom: 10 / 375 * 100vw;
+                    width: 100%;
+                    height: 21 / 375 * 100vw;
+                    font-size: 16 / 375 * 100vw;
+                    line-height: 21 / 375 * 100vw;
+                }
+                .form-line {
+                    margin: 0 0 40 / 375 * 100vw 0;
+                    width: 100%;
+                    height: 1 / 375 * 100vw;
+                }
+                .footer-button {
+                    display: block;
+                    width: 100%;
+                    span {
+                        button {
+                            margin: 0 auto;
+                            margin-top: -15 / 375 * 100vw;
+                            width: 340 / 375 * 100vw;
+                            height: 59 / 375 * 100vw;
+                            border-radius: 30 / 375 * 100vw;
+                            font-size: 16 / 375 * 100vw;
+                        }
+                    }
+                    div {
+                        margin: 0 auto;
+                        width: 287 / 375 * 100vw;
+                        margin-top: 25 / 375 * 100vw;
+                        a {
+                            margin: 0px;
+                            text-align: center;
+                            font-size: 12 / 375 * 100vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .popup__form {
+        .popup__body {
+            height: 480 / 375 * 100vw;
+        }
+    }
+}
